@@ -42,5 +42,16 @@ It is able to train for about 10 epochs in 30 seconds on a reasonably modern x86
 
 Paths to the training and test sets should be provided on the CLI, the example project will take care of loading the dataset on its own.
 
+## Building
+Clone the repository.
+
+cd in the cloned repository.
+
+``cmake -B build .``
+
+``cd build``
+
+``make``
+
 ## Notes
 Meta programming is used heavily throughout the project to keep code repetition to a minimum when implementing element-wise operations; where possible transpositions are done by swapping indices instead of rewriting matrices in memory.
