@@ -1,0 +1,6 @@
+add_library(TensorAutomaticDifferentiationLibrary STATIC TensorNodes.h ArenaTensorNode.h TensorAutomaticDifferentiation.cpp)
+
+target_include_directories(TensorAutomaticDifferentiationLibrary PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+target_link_libraries(TensorAutomaticDifferentiationLibrary TensorLibrary)
+
+add_subdirectory(Tests)

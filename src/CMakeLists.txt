@@ -1,0 +1,4 @@
+add_subdirectory(Arena)
+add_subdirectory(Tensor)
+add_subdirectory(TensorAutomaticDifferentiation)
+add_subdirectory(TensorDeepLearning)

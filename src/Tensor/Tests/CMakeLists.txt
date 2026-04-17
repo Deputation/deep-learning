@@ -1,0 +1,2 @@
+add_executable(TensorTests Tests.cpp)
+target_link_libraries(TensorTests TensorLibrary)

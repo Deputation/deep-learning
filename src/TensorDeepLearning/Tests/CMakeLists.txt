@@ -1,0 +1,8 @@
+add_executable(TensorDeepLearningTests Tests.cpp)
+target_link_libraries(TensorDeepLearningTests TensorDeepLearningLibrary)
+
+add_executable(Classification Classification.cpp)
+target_link_libraries(Classification TensorDeepLearningLibrary)
+
+add_executable(TrainedClassification TrainedClassification.cpp)
+target_link_libraries(TrainedClassification TensorDeepLearningLibrary)
