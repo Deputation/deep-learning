@@ -5,9 +5,13 @@ This repository implements a small deep learning framework written in C++ 23 wit
 Training with mini batches is supported. Where possible, implementations of the functions that don't make use of the automatic differentiation engine (i.e. that don't allocate nodes) have been written to speed up inference.
 
 Activation functions implemented ( ``src/TensorDeepLearning/Functions/ActivationFunctions.h`` ): Sin, ReLU, Softmax
+
 Layer types implemented (``src/TensorDeepLearning/Layers`` ): Linear, Activation
+
 Loss functions implemented ( ``src/TensorDeepLearning/Functions/LossFunctions.h`` ): Squared error, Cross-Entropy
+
 Optimizers implemented (``src/TensorDeepLearning/Optimizers``): Stochastic Gradient Descent (SGD), AdaGrad, Adam, Adam with decoupled weight decay (AdamWD)
+
 Learning rate schedulers implemented ( ``src/TensorDeepLearning/Schedulers`` ): Fixed rate
 
 Implemented a model class to compose models of layers, retrieve optimization parameters, perform inference and write them to disk.
